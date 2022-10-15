@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'vx%c$^2om^lo(+)a1acadq5wzg11_^r6j)t+y)x!(_huv!-!65'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = True #False 不允许调试模式python manage.py runserver启动
 
 ALLOWED_HOSTS = []
 
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'personal',
 ]
 
 MIDDLEWARE = [
@@ -112,6 +113,8 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+#APPEND_SLASH=False
 
 
 # Static files (CSS, JavaScript, Images)
